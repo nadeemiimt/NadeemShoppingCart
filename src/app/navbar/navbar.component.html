@@ -1,0 +1,16 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+      <a class="navbar-brand" href="">Dream Bean</a>
+      <a *ngIf="!name" class="navbar-brand" [routerLink]="['login']">Login</a>
+      <a *ngIf="name" class="navbar-brand" href="">Welcome {{name}}</a>
+      <a *ngIf="name" class="navbar-brand" [routerLink]="['login',true]">Logout</a>
+      <a *ngIf="!name" class="navbar-brand" [routerLink]="['register']">Register</a>
+
+      <app-cart-menu></app-cart-menu>
+    </div>
+  </div>
+</nav>
