@@ -1,5 +1,5 @@
 # NadeemShoppingCart
-A test shopping cart application
+A test shopping cart application in Angular 5
 
 # Start Instruction
 1- Run below command to install json-server which acts as a fake rest api
